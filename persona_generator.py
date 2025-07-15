@@ -24,14 +24,14 @@ Text:
     )
 
     if result.returncode != 0:
-        print("❌ Error running TinyLLaMA:", result.stderr.decode())
+        print(" Error running TinyLLaMA:", result.stderr.decode())
         return
 
     persona = result.stdout.decode()
     output_path = os.path.join("output", f"{username}_persona.txt")
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(persona)
-    print(f"\n✅ Persona saved to: {output_path}")
+    print(f"\n Persona saved to: {output_path}")
 
 if __name__ == "__main__":
     username = "kojied"
