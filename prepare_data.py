@@ -6,7 +6,7 @@ def combine_user_data(username):
     combined_path = f"output/{username}_combined.txt"
 
     if not os.path.exists(post_path) or not os.path.exists(comment_path):
-        print("❌ Post or comment file not found.")
+        print(" Post or comment file not found.")
         return
 
     with open(post_path, "r", encoding="utf-8") as p, \
@@ -18,7 +18,7 @@ def combine_user_data(username):
         out.write("\n\n=== REDDIT COMMENTS ===\n\n")
         out.write(c.read())
 
-    print(f"✅ Combined data saved to: {combined_path}")
+    print(f" Combined data saved to: {combined_path}")
 
 
 if __name__ == "__main__":
