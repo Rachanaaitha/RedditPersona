@@ -2,9 +2,9 @@ import praw
 import os
 
 
-REDDIT_CLIENT_ID = "vmaof8tyc8Po0kczy2ubHw"
-REDDIT_CLIENT_SECRET = "ECKWmOn_hFyrNspOeqRoqp0KYMs7cw"
-REDDIT_USER_AGENT = "PersonaBuilder/0.1 by Afraid-Permission-43"
+REDDIT_CLIENT_ID = ""
+REDDIT_CLIENT_SECRET = ""
+REDDIT_USER_AGENT = ""
 
 
 USERNAME = "kojied"
